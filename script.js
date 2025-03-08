@@ -1,5 +1,8 @@
 function onScanSuccess(decodedText, decodedResult) {
-    document.getElementById("result").innerText = `QR Code: ${decodedText}`;
+    if (`${decodedText}` == "CF258X") {
+        document.get("result").innerText = "Toner oliginal";
+    }
+    
 }
 
 function onScanFailure(error) {
